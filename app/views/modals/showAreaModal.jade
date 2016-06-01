@@ -1,0 +1,14 @@
+div#showAreaModal.modal.fade(role = "dialog")
+    div.modal-dialog
+        div.modal-content
+            form(role="form")
+                div.form-group 
+                    div.modal-header
+                        button.close(type="button", data-dismiss="modal") &times;
+                        h4.modal-title Show Area
+                    div.modal-body
+                        label.from-control(for="input-name") Area:
+                        select#show-area-select-area.form-control   
+                    div.modal-footer
+                        button#submit-show-area.btn.btn-primary(data-dismiss="modal", onclick="showArea()") Submit
+                        button.btn.btn-default(data-dismiss="modal") Close

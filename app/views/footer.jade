@@ -1,0 +1,25 @@
+//.container
+    .footer
+        hr(style='margin: 30px 0 10px 0;')
+        p &copy;&nbsp;
+            a(href='#') Jian-Hong Liao
+            |  2016
+
+script(src='/javascripts/jquery-2.2.3.min.js')
+script.
+    $(function(){  
+        $("#content-about").load("/contents/about"); 
+    });
+script.
+    $(document).ready(function(){
+        $(".nav-sidebar a").click(function(){
+            $(this).tab('show');
+        });
+    });
+script(src='/javascripts/bootstrap.min.js')
+script(src='/javascripts/socket.io.js')
+script(src='/javascripts/socket.js')
+script(src='/javascripts/app.js')
+script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5PSMP6QNVFBk-jbjKyxNcAScokuTC6Og&callback=initMap")
+
+block footer

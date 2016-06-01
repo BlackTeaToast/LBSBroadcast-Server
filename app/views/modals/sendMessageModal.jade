@@ -1,0 +1,16 @@
+div#sendMessageModal.modal.fade(role = "dialog")
+    div.modal-dialog
+        div.modal-content
+            form(role="form")
+                div.form-group 
+                    div.modal-header
+                        button.close(type="button", data-dismiss="modal") &times;
+                        h4.modal-title Send Message
+                    div.modal-body
+                        label.from-control(for="input-name") Area:
+                        select#send-message-select-area.form-control
+                        label.from-control(fot="input-msg") Message:
+                        input#input-message.form-control(type="text")    
+                    div.modal-footer
+                        button#submit-send-message.btn.btn-primary(data-dismiss="modal", onclick="sendMessage()") Submit
+                        button.btn.btn-default(data-dismiss="modal") Close
